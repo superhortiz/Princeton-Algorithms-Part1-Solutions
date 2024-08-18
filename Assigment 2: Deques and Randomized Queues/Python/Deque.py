@@ -205,12 +205,13 @@ class Deque:
 
 
 # Example usage
-a = Deque()
-a.addFirst(1)
-a.addFirst(2)
-a.addFirst(3)
-a.addLast(53)
-print(a)
+if __name__ == "__main__":
+    a = Deque()
+    a.addFirst(1)
+    a.addFirst(2)
+    a.addFirst(3)
+    a.addLast(53)
+    print(a)
 
-for element in a.Iterator():
-    print(element)
+    for element in a.Iterator():
+        print(element)
