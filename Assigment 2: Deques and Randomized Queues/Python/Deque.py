@@ -206,12 +206,15 @@ class Deque:
 
 # Example usage
 if __name__ == "__main__":
-    a = Deque()
-    a.addFirst(1)
-    a.addFirst(2)
-    a.addFirst(3)
-    a.addLast(53)
-    print(a)
-
-    for element in a.Iterator():
-        print(element)
+    deque = Deque()
+    deque.addFirst(1)
+    deque.addFirst(2)
+    deque.addFirst(3)
+    deque.addLast(5)
+    print("Deque: " + str(deque))
+    for item in deque.Iterator():
+        print(f"Item: {item}")
+    print(f"random_queue is empty? {deque.isEmpty()}")
+    print(f"Size = {deque.size}")
+    print(f"Remove a random element: {deque.removeFirst()}")
+    print(f"Size = {deque.size}")
