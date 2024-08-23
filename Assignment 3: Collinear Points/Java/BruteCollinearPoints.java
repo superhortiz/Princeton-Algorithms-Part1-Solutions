@@ -76,7 +76,6 @@ public class BruteCollinearPoints {
      * @param args command-line arguments (input file containing points)
      */
     public static void main(String[] args) {
-
         // read the n points from a file
         In in = new In(args[0]);
         int n = in.readInt();
