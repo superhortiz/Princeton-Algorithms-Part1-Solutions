@@ -48,33 +48,33 @@ class FastCollinearPoints:
 
 				q += 1
 
-	def number_of_segments(self):
-		"""
-		Returns the number of line segments found.
+    def number_of_segments(self):
+        """
+        Returns the number of line segments found.
 
-		Returns:
-			int: The number of line segments.
-		"""
-		return len(self.segments)
+        Returns:
+            int: The number of line segments.
+        """
+        return len(self.segments)
 
-	def get_segments(self):
-		"""
-		Returns an array of line segments found.
+    def get_segments(self):
+        """
+        Returns an array of line segments found.
 
-		Returns:
-			list[LineSegment]: An array of line segments.
-		"""
-		return self.segments
+        Returns:
+            list[LineSegment]: An array of line segments.
+        """
+        return self.segments
 
 
 # Example usage
 if __name__ == "__main__":
     points = [Point(10000, 0), Point(0, 10000), Point(3000, 7000), Point(7000, 3000), Point(20000, 21000),
-        	  Point(3000, 4000), Point(14000, 15000), Point(6000, 7000)]
+	      Point(3000, 4000), Point(14000, 15000), Point(6000, 7000)]
     
     lines = FastCollinearPoints(points)
     print(f"Number of segments found = {lines.number_of_segments()}")
 
     segments = lines.get_segments()
     for segment in segments:
-    	print(segment)
+        print(segment)
