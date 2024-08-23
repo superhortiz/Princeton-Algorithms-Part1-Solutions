@@ -31,7 +31,7 @@ class LineSegment:
 
 # Example usage
 if __name__ == "__main__":
-	p = Point(0, 0)
-	q = Point(2, 3)
-	segment = LineSegment(p, q)
-	print(segment)
+    p = Point(0, 0)
+    q = Point(2, 3)
+    segment = LineSegment(p, q)
+    print(segment)
