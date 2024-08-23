@@ -4,14 +4,14 @@ from copy import deepcopy
 
 class FastCollinearPoints:
 	def __init__(self, points):
-		"""
-		Initializes a FastCollinearPoints object with an array of points.
+	"""
+	Initializes a FastCollinearPoints object with an array of points.
 
-		Args:
-			points (list[Point]): An array of points.
-		Raises:
-			ValueError: If the input array or any point in it is None.
-			ValueError: If any two points in the array are the same.
+	Args:
+		points (list[Point]): An array of points.
+	Raises:
+		ValueError: If the input array or any point in it is None.
+		ValueError: If any two points in the array are the same.
         """
 		if points is None:
 			raise ValueError()
@@ -30,8 +30,8 @@ class FastCollinearPoints:
 				clone.append(points[i])
 
 		clone.sort()	# Sorting the points is crucial; it allows efficient segment definition
-						# Once sorted, we can identify line segments efficiently when encountered for the first time
-						# This approach helps us avoid storing duplicate segments
+				# Once sorted, we can identify line segments efficiently when encountered for the first time
+				# This approach helps us avoid storing duplicate segments
 
 		for p in range(n):
 			copy = deepcopy(clone)
