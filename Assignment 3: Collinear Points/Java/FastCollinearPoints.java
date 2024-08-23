@@ -16,7 +16,7 @@ public class FastCollinearPoints {
      *
      * @param points an array of points
      * @throws IllegalArgumentException if the input array or any point in it is null,
-     *                                  or if the array contains duplicate points
+     * or if the array contains duplicate points
      */
     public FastCollinearPoints(Point[] points) {
         if (points == null) {
@@ -83,7 +83,6 @@ public class FastCollinearPoints {
      * @param args command-line arguments (input file containing points)
      */
     public static void main(String[] args) {
-
         // read the n points from a file
         In in = new In(args[0]);
         int n = in.readInt();
