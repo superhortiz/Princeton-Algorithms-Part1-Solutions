@@ -1,17 +1,17 @@
 """
-The `Deque` class represents a double-ended queue (deque) that allows adding and removing items
-from both ends of the collection. It uses a doubly linked list implementation for efficient
-operations at both ends.
+The `RandomizedQueue` class represents a queue where the item removed is chosen uniformly at random
+from items in the data structure. It uses a dynamic array (Python list) for efficient operations.
 
 Usage:
-- Create a deque: `my_deque = Deque()`
-- Add items to the front: `my_deque.addFirst(item)`
-- Add items to the back: `my_deque.addLast(item)`
-- Remove an item from the front: `my_deque.removeFirst()`
-- Remove an item from the back: `my_deque.removeLast()`
-- Iterate over items: `for item in my_deque.Iterator(): ...`
+- Create a randomized queue: `random_queue = RandomizedQueue()`
+- Add an item: `random_queue.enqueue(item)`
+- Remove a random item: `random_queue.dequeue()`
+- Sample a random item without removing: `random_queue.sample()`
+- Check if the queue is empty: `random_queue.is_empty()`
+- Get the number of items: `random_queue.size()`
+- Iterate over items in random order: `for item in random_queue.iterator(): ...`
 
-Note: The `Deque` class includes an inner `Node` class for representing nodes in the linked list.
+Note: The `RandomizedQueue` class ensures that each iterator returns the items in uniformly random order.
 """
 
 
