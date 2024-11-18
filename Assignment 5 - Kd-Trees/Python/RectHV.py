@@ -146,19 +146,3 @@ class RectHV:
             str: The string representation of the rectangle.
         """
         return "[" + str(self.xmin()) + ", " + str(self.xmax()) + "] x [" + str(self.ymin()) + ", " + str(self.ymax()) + "]"
-
-
-# Example usage
-if __name__ == "__main__":
-    from Point2D import Point2D
-
-    a = RectHV(0, 0, 1, 1)
-    b = RectHV(0.5, 0.5, 1.5, 1.5)
-    p = Point2D(1.5, 1.5)
-    
-    print(f"Rectangle {a} contains the point {p}?", a.contains(p))
-    print(f"Rectangle {a} intersects rectangle {b}?", a.intersects(b))
-    print(f"Euclidean distance between the point {p} and the closest point on the rectangle {a}:", a.distanceTo(p))
-    a.draw()
-    b.draw()
-    plt.show()

@@ -115,16 +115,3 @@ class Point2D:
             str: A string representation of the point in the format (x, y).
         """
         return f"({self.x()}, {self.y()})"
-
-
-# Example usage
-if __name__ == "__main__":
-    a = Point2D(0, 0)
-    b = Point2D(1, 1)
-    
-    print("Point a:", a)
-    print("Distance from point a to point b:", a.distanceTo(b))
-    print("Is point a equal to point b?", a == b)
-    a.draw()
-    b.draw()
-    plt.show()
