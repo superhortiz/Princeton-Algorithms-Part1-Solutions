@@ -145,16 +145,3 @@ class Board:
                 if self.board[i][j] == 0:
                     return (i, j)
         return (-1, -1)
-
-
-# Example usage
-if __name__ == "__main__":
-    tiles = [[1, 2, 3], [4, 5, 6], [7, 0, 8]]
-    board = Board(tiles)
-    print(board)
-    print("Hamming distance =", board.hamming())
-    print("Manhattan distance =", board.manhattan())
-    print("Is the goal?", board.isGoal())
-    for neighbor in board.neighbors():
-        print(neighbor)
-    print("Twin =\n", board.twin(), sep = '')

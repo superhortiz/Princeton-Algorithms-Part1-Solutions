@@ -104,19 +104,3 @@ class Solver:
             if other is None or not isinstance(other, Solver._SearchNode):
                 return False
             return self.f == other.f
-
-
-# Example usage
-if __name__ == "__main__":
-    tiles = [[3, 7, 0], [2, 5, 1], [4, 6, 8]]
-    initial = Board(tiles)
-    solver = Solver(initial)
-    print("Is it solvable?", solver.isSolvable())
-    print("Number of moves =", solver.moves())
-    print("Solution:")
-
-    if solver.isSolvable():
-        for node in solver.solution():
-            print(node)
-    else:
-        print("It is not solvable")
