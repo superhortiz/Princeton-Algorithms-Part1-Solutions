@@ -76,25 +76,3 @@ class Point:
             str: A string representation of this point.
         """
         return f'({self.x}, {self.y})'
-
-
-# Example usage
-if __name__ == "__main__":
-    points = [Point(0, 0), Point(7, 6), Point(7, 1), Point(0, 6)]
-
-    points.sort()
-    print("Points sorted by y-coordinate:")
-    for p in points:
-        print(p)
-
-    points.sort(key = points[0].slopeOrder())
-    print("Points sorted by slopes:")
-    for p in points:
-        print(p)
-
-	p1 = Point(1, 1)
-	p2 = Point(0, 4)
-	p3 = Point(4, 0)
-	print(p1, "slope to", p1, "=", p1.slopeTo(p1))
-	print(p1, "slope to", p2, "=", p1.slopeTo(p2))
-	print(p1, "slope to", p3, "=", p1.slopeTo(p3))

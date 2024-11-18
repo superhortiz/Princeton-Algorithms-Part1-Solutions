@@ -27,11 +27,3 @@ class LineSegment:
             str: A string representation of the line segment in the format "p -> q".
         """
         return f'{self.p} -> {self.q}'
-
-
-# Example usage
-if __name__ == "__main__":
-    p = Point(0, 0)
-    q = Point(2, 3)
-    segment = LineSegment(p, q)
-    print(segment)
