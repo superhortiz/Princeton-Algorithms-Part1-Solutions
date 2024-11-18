@@ -105,20 +105,3 @@ class RandomizedQueue:
         copy = deepcopy(self.s)
         random.shuffle(copy)
         return iter(copy)
-
-
-# Example usage
-if __name__ == "__main__":
-    random_queue = RandomizedQueue()
-    random_queue.enqueue(5)
-    random_queue.enqueue(4)
-    random_queue.enqueue(3)
-    random_queue.enqueue(2)
-    random_queue.enqueue(1)
-    for item in random_queue.iterator():
-        print(f"Item: {item}")
-    print(f"random_queue is empty? {random_queue.is_empty()}")
-    print(f"Size = {random_queue.size()}")
-    print(f"Show a random element: {random_queue.sample()}")
-    print(f"Remove a random element: {random_queue.dequeue()}")
-    print(f"Size = {random_queue.size()}")

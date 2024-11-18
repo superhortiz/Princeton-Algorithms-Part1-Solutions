@@ -202,19 +202,3 @@ class Deque:
             sequence.append(str(curr.val))
             curr = curr.prev
         return ' <-> '.join(sequence)
-
-
-# Example usage
-if __name__ == "__main__":
-    deque = Deque()
-    deque.addFirst(1)
-    deque.addFirst(2)
-    deque.addFirst(3)
-    deque.addLast(5)
-    print("Deque: " + str(deque))
-    for item in deque.Iterator():
-        print(f"Item: {item}")
-    print(f"random_queue is empty? {deque.isEmpty()}")
-    print(f"Size = {deque.size}")
-    print(f"Remove a random element: {deque.removeFirst()}")
-    print(f"Size = {deque.size}")
